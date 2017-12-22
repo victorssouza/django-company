@@ -2,6 +2,9 @@
 
 This file is used to list changes made in each version of the 'django-company' project.
 
+## 0.1.3
+- Add README.md file
+
 ## 0.1.2
 - Add unit tests for 'employees'
 
