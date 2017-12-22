@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>API REST v1</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  </head>
+  <body style="font: 13px/1.5 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif; background: #F8F8F8; color: #555;">
+        <div class="mx-auto" style="width: 80%;">
+            <br/>
+            <br/>
+            <h2>REST API v.1.0</h2>
+            <br/>
+            <br/>
+            <h5>Employee</h5>
+            <br/>
+            <table class="table table-sm table-hover" style="width:100%;">
+                <thead class="thead-light">
+                    <tr>
+                    <th scope="col"><b>Resource</b></th>
+                    <th scope="col"><b>Description</b></th>
+                    <th scope="col"><b>Example Payload</b></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a target="_blank" href="/api/v1/employee/">GET      /api/v1/employee/</a></td>
+                        <td>Retrieve all the registered employees.</td>
+                    </tr>
+                    <tr>
+                        <td>POST     /api/v1/employee/</td>
+                        <td>Create a new employee.</td>
+                        <td>'{"name":"Employee Name", "email": "some@email.com", "department": "Business"}'</td>
+                    </tr>
+                    <tr>
+                        <td>GET      /api/v1/employee/:id</td>
+                        <td>Receive a single employee.</td>
+                    </tr>
+                    <tr>
+                        <td>PUT      /api/v1/employee/:id</td>
+                        <td>Modify attribute/attributes for an existing employee.</td>
+                        <td>'{"department": "Developer"}'</td>
+                    </tr>
+                    <tr>
+                        <td>DELETE    /api/v1/employee/:id</td>
+                        <td>Remove a employee from the database.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>
